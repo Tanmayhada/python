@@ -1,0 +1,18 @@
+def write():
+    f=open('studentfile.txt','w')
+    n=int(input('enter no of lines:'))
+    for i in range(n):
+        line=input('enter line')
+        f.write(line)
+        f.write('\n')
+    f.close()
+def read():
+    f=open('studentfile.txt','r')
+    s=f.read()
+    size=len(s)
+    print('size of given file')
+    print(s)
+    print('is',size,'bytes')
+write()
+read()
+    
