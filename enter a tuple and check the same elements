@@ -1,13 +1,11 @@
-def freq(lis,ele):
-    count=0
-    for i in lis:
-        if ele==i:
-            count+=1
-    print(ele,'has frequency',count,'in list',lis)
-l=[]
-n=int(input('Enter no of elements in list'))
-for i in range(0,n):
-    el=int(input('enter element:'))
-    l.append(el)
-et=int(input('enter element to calculate frequency of:'))
-freq(l,et)
+def same(tup):
+    ln=len(tup)
+    num=tup.count(tup[0])
+    if num==ln:
+        print('tuple',tup,'contains all the same elements')
+    else:
+        print('tuple',tup,'does not contain all the same elements')
+t=eval(input('enter tuple:'))
+print('tuple is',t)
+same(t)
+
