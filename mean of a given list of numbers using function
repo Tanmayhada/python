@@ -1,0 +1,13 @@
+def mean(l):
+    length=len(l)
+    mean=s=0
+    for i in range(0,length):
+        s+=l[i]
+    mean=s/length
+    print('Mean of given list',l,'is',mean)
+l=[]
+n=int(input('Enter no of elements in list'))
+for i in range(0,n):
+    el=int(input('enter element:'))
+    l.append(el)
+mean(l)
