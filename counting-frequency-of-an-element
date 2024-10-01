@@ -1,0 +1,13 @@
+def freq(lis,ele):
+    count=0
+    for i in lis:
+        if ele==i:
+            count+=1
+    print(ele,'has frequency',count,'in list',lis)
+l=[]
+n=int(input('Enter no of elements in list'))
+for i in range(0,n):
+    el=int(input('enter element:'))
+    l.append(el)
+et=int(input('enter element to calculate frequency of:'))
+freq(l,et)
