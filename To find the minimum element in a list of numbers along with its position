@@ -1,0 +1,15 @@
+def min(l):
+    minele=l[0]
+    minindex=0
+    length=len(l)
+    for i in range(1,length):
+        if l[i]<minele:
+            minele=l[i]
+            minindex=i
+    print('The minimum element of the list',l,'is',minele,'at position',minindex+1)
+n=int(input('Enter no of elements in list'))
+l=[]
+for i in range(0,n):
+    el=int(input('enter element:'))
+    l.append(el)
+min(l)
